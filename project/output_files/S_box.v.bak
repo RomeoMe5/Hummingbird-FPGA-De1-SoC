@@ -1,0 +1,27 @@
+module S1_box(
+
+	input		[3:0]	in,
+	output	[3:0]	out
+);
+
+always @*
+	case(in)
+	'h0: out = 'h8;
+   'h1: out = 'h6;
+   'h2: out = 'h5;
+   'h3: out = 'hf;
+   'h4: out = 'h1;
+   'h5: out = 'hc;
+   'h6: out = 'ha;
+   'h7: out = 'h9;
+   'h8: out = 'he;
+   'h9: out = 'hb;
+   'ha: out = 'h2;
+   'hb: out = 'h4;
+   'hc: out = 'h7;
+   'hd: out = 'h0;
+   'he: out = 'hd;
+   'hf: out = 'h3;
+	endcase
+
+endmodule

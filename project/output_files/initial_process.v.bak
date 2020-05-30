@@ -1,0 +1,12 @@
+module initial_process(
+input 				clk,
+input					reset,
+input 	[255:0]	input_key,
+output	[ 15:0]	rs1_out,
+output	[ 15:0]	rs2_out,
+output	[ 15:0]	rs3_out,
+output	[ 15:0]	rs4_out,
+output				data_rdy,
+output				rs_rdy);
+
+

@@ -1,0 +1,21 @@
+module encryption(
+
+input					clk,
+input		[15:0]	text,
+input		[63:0]	key,
+output	[15:0]	ctext
+);
+
+reg [3:0] 	count;
+reg [15:0]	xin;
+
+always @(clk)
+	case(count)
+		0:	begin
+				xin = text xor key[15:0];
+				count = 1;
+			end
+		1:	begin
+				S1_box(
+			end
+endmodule

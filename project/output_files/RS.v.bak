@@ -1,0 +1,16 @@
+module RS(
+input 					clk,
+input 					reset,
+input			[15:0]	nonce,
+input 		[15:0]	digit1,
+input 		[15:0]	digit2,
+output reg	[15:0]	out);
+
+always @(posedge clk)
+	if(~reset)
+		out = nonce;
+	else
+		out = digit1 + digit2;
+
+endmodule
+

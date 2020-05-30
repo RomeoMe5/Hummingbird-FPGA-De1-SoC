@@ -1,0 +1,32 @@
+module decryption(
+
+input		[ 15:0]	datain,
+input		[255:0]	key,
+input		[ 15:0]	rs1,
+input		[ 15:0]	rs2,
+input		[ 15:0]	rs3,
+input		[ 15:0]	rs4,
+output	[ 15:0]	dataout);
+
+wire	[15:0] ek1_in;
+wire	[15:0] ek1_out;
+wire	[15:0] ek2_in;
+wire	[15:0] ek2_out;
+wire	[15:0] ek3_in;
+wire	[15:0] ek3_out;
+wire	[15:0] ek4_in;
+wire	[15:0] ek4_out;
+
+assign ek1_in = datain + rs1;
+assign ek2_in = ek1_out + rs2;
+assign ek3_in = ek2_out + rs3;
+assign ek4_in = ek3_out + rs4;
+
+encryption_function inst1 (ek1_in, key[ 63:0  ], ek1_out);
+encryption_function inst2 (ek2_in, key[127:64 ], ek2_out);
+encryption_function inst3 (ek3_in, key[191:128], ek3_out);
+encryption_function inst4 (ek4_in, key[255:192], ek4_out);
+
+assign dataout = ek4_out;
+
+endmodule

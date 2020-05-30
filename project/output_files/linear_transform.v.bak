@@ -1,0 +1,11 @@
+module linear_transform(
+input		[15:0] m,
+output	[15:0] L);
+
+wire [15:0] m6, m10;
+
+assign m6 = {m[9:0],m[15:10]);
+assign m10= {m[5:0],m[15:6]);
+
+assign L = m + m6 + m10;
+endmodule

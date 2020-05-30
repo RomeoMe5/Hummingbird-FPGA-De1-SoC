@@ -1,0 +1,77 @@
+module final_humming(
+input 				clk,
+input					reset,
+input		[15:0]	input_data,
+input		[63:0]	key,
+input					data_rdy,
+output	[15:0]	enc_data_final,
+output	[15:0]	dec_data_final,
+output				enc_complete,
+output				dec_complete
+);
+
+wire [15:0] enc_data_final;
+wire [15:0] dec_data_final;
+
+wire enc_complete;
+wire dec_complete;
+
+reg [15:0] data_in;
+reg [63:0] key_in;
+reg [15:0] rs1;
+reg [15:0] rs2;
+reg [15:0] rs3;
+reg [15:0] rs4;
+
+wire [15:0] RS1_out;
+wire [15:0] RS2_out;
+wire [15:0] RS3_out;
+wire [15:0] RS4_out;
+
+wire rs_rdy;
+
+wire [15:0]	enc_data_out;
+wire [15:0]	dec_data_in;
+wire [15:0]	dec_data_out;
+
+reg rs_rdy1;
+
+assign dec_data_in = enc_data_out;
+assign enc_complete = rs_rdy1;
+assign dec_complete = rs_rdy1;
+
+assign enc_data_final=(enc_complete)?enc_data_out:0;
+assign dec_data_final=(dec_complete)?dec_data_out:0;
+
+encryption inst_enc(	data_in,
+							key_in,
+							enc_data_out,
+							rs1,
+							rs2,
+							rs3,
+							rs4);
+decryption inst_enc(	dec_data_in,
+							key_in,
+							dec_data_out,
+							rs1,
+							rs2,
+							rs3,
+							rs4);
+initial_process inst_int(	clk,
+									reset,
+									data_rdy,
+									key_in,
+									RS1_out,
+									RS2_out,
+									RS3_out,
+									RS4_out,
+									rs_rdy);
+always @(posedge clk)
+begin
+	if(~reset)
+	begin
+		data_in<=16'b0;
+		
+									
+									
+endmodule
