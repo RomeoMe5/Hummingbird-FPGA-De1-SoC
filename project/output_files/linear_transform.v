@@ -1,3 +1,4 @@
+// Линейное преобразование при шифровании
 module linear_transform_enc(
 input	wire	[15:0] m,
 output		[15:0] L);
@@ -11,6 +12,7 @@ assign L = m ^ m6 ^ m10;
 
 endmodule
 
+// Линейное преобразование при дешифровании
 module linear_transform_dec(
 input	wire	[15:0] m,
 output		[15:0] L);

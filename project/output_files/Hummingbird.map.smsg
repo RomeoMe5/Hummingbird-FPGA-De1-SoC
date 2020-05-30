@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at DE1_SOC_golden_top.v(65): object "KEY" differs only in case from object "key" in the same scope File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 65
-Warning (10268): Verilog HDL information at initial_process.v(37): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 37
+Info (10281): Verilog HDL Declaration information at DE1_SOC_golden_top.v(65): object "KEY" differs only in case from object "key" in the same scope File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 65
+Warning (10268): Verilog HDL information at initial_process.v(37): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 37

@@ -1,3 +1,4 @@
+// Преобразование значений для вывода семисегментный индикатор
 module hex_display(
 input			[3:0]	digit,
 output reg	[6:0]	hex);

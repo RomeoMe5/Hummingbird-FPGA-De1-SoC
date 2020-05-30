@@ -37,11 +37,12 @@ wire [15:0]	enc_data_out;
 wire [15:0]	dec_data_in;
 wire [15:0]	dec_data_out;
 
-
+// Вывод результатов работы модуля после шифрования
 assign enc_data_final=(enc_complete)?enc_data_out:16'h0;
 assign dec_data_final=(dec_complete)?dec_data_out:16'h0;
 assign dec_data_in = enc_data_out;
 
+// Выполнение шифрования блока данных
 encryption inst_enc(	data_in,
 							key,
 							encRS1,
@@ -53,6 +54,7 @@ encryption inst_enc(	data_in,
 							enc3_out,
 							enc_data_out);
 
+// Выполнение дешифрования блока данных
 decryption inst_dec(	dec_data_in,
 							key,
 							decRS1,
@@ -65,6 +67,7 @@ decryption inst_dec(	dec_data_in,
 							dec1_in,
 							dec_data_out);
 
+// Блок инициализации и обновления регистров состояния
 initial_process inst_init(	clk,
 									reset,
 									data_rdy,
@@ -92,14 +95,17 @@ initial_process inst_init(	clk,
 									dec_complete,
 									rs_rdy);
 
+// Управление потоком входных данных
 always @(posedge clk)
 begin
 	if(~reset)
 	begin
+		// В процессе инициализации 
 		data_in <= NONCE0 + NONCE2;
 	end
 	else if(rs_rdy)
 	begin
+		// В процессе шифрования
 		data_in <= input_data;
 	end
 end

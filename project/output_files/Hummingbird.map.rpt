@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Hummingbird
-Sat May 30 19:19:57 2020
+Sat May 30 20:14:29 2020
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat May 30 19:19:57 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sat May 30 20:14:29 2020       ;
 ; Quartus Prime Version           ; 18.1.1 Build 646 04/11/2019 SJ Lite Edition ;
 ; Revision Name                   ; Hummingbird                                 ;
 ; Top-level Entity Name           ; DE1_SOC_golden_top                          ;
@@ -169,28 +169,28 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                           ; Library ;
-+------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
-; DE1_SOC_golden_top.v               ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v               ;         ;
-; output_files/S_box.v               ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v               ;         ;
-; output_files/encryption.v          ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption.v          ;         ;
-; output_files/final_humming.v       ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/final_humming.v       ;         ;
-; output_files/linear_transform.v    ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/linear_transform.v    ;         ;
-; output_files/hex_display.v         ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/hex_display.v         ;         ;
-; output_files/encryption_function.v ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v ;         ;
-; output_files/decryption_function.v ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v ;         ;
-; output_files/decryption.v          ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption.v          ;         ;
-; output_files/initial_process.v     ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v     ;         ;
-+------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
++------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; DE1_SOC_golden_top.v               ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v               ;         ;
+; output_files/S_box.v               ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v               ;         ;
+; output_files/encryption.v          ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption.v          ;         ;
+; output_files/final_humming.v       ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/final_humming.v       ;         ;
+; output_files/linear_transform.v    ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/linear_transform.v    ;         ;
+; output_files/hex_display.v         ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/hex_display.v         ;         ;
+; output_files/encryption_function.v ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v ;         ;
+; output_files/decryption_function.v ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v ;         ;
+; output_files/decryption.v          ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption.v          ;         ;
+; output_files/initial_process.v     ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v     ;         ;
++------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -717,7 +717,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -727,118 +727,118 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Sat May 30 19:19:21 2020
+    Info: Processing started: Sat May 30 20:13:41 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Hummingbird -c Hummingbird
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file de1_soc_golden_top.v
-    Info (12023): Found entity 1: DE1_SOC_golden_top File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 40
+    Info (12023): Found entity 1: DE1_SOC_golden_top File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 40
 Info (12021): Found 8 design units, including 8 entities, in source file output_files/s_box.v
-    Info (12023): Found entity 1: S1_box_enc File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 5
-    Info (12023): Found entity 2: S2_box_enc File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 33
-    Info (12023): Found entity 3: S3_box_enc File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 61
-    Info (12023): Found entity 4: S4_box_enc File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 89
-    Info (12023): Found entity 5: S1_box_dec File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 117
-    Info (12023): Found entity 6: S2_box_dec File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 145
-    Info (12023): Found entity 7: S3_box_dec File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 173
-    Info (12023): Found entity 8: S4_box_dec File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/S_box.v Line: 201
+    Info (12023): Found entity 1: S1_box_enc File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 5
+    Info (12023): Found entity 2: S2_box_enc File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 33
+    Info (12023): Found entity 3: S3_box_enc File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 61
+    Info (12023): Found entity 4: S4_box_enc File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 89
+    Info (12023): Found entity 5: S1_box_dec File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 117
+    Info (12023): Found entity 6: S2_box_dec File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 145
+    Info (12023): Found entity 7: S3_box_dec File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 173
+    Info (12023): Found entity 8: S4_box_dec File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/S_box.v Line: 201
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/encryption.v
-    Info (12023): Found entity 1: encryption File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption.v Line: 1
+    Info (12023): Found entity 1: encryption File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/final_humming.v
-    Info (12023): Found entity 1: final_humming File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/final_humming.v Line: 1
+    Info (12023): Found entity 1: final_humming File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/final_humming.v Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file output_files/linear_transform.v
-    Info (12023): Found entity 1: linear_transform_enc File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/linear_transform.v Line: 1
-    Info (12023): Found entity 2: linear_transform_dec File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/linear_transform.v Line: 14
+    Info (12023): Found entity 1: linear_transform_enc File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/linear_transform.v Line: 2
+    Info (12023): Found entity 2: linear_transform_dec File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/linear_transform.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/hex_display.v
-    Info (12023): Found entity 1: hex_display File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/hex_display.v Line: 1
+    Info (12023): Found entity 1: hex_display File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/hex_display.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/encryption_function.v
-    Info (12023): Found entity 1: encryption_function File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v Line: 1
+    Info (12023): Found entity 1: encryption_function File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/decryption_function.v
-    Info (12023): Found entity 1: decryption_function File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v Line: 1
+    Info (12023): Found entity 1: decryption_function File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/decryption.v
-    Info (12023): Found entity 1: decryption File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption.v Line: 1
+    Info (12023): Found entity 1: decryption File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/initial_process.v
-    Info (12023): Found entity 1: initial_process File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 1
+    Info (12023): Found entity 1: initial_process File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 1
 Info (12127): Elaborating entity "DE1_SOC_golden_top" for the top level hierarchy
-Warning (10034): Output port "HEX4" at DE1_SOC_golden_top.v(59) has no driver File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-Warning (10034): Output port "HEX5" at DE1_SOC_golden_top.v(60) has no driver File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-Warning (10034): Output port "LEDR[9..2]" at DE1_SOC_golden_top.v(70) has no driver File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-Info (12128): Elaborating entity "final_humming" for hierarchy "final_humming:humming_inst" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 118
-Info (12128): Elaborating entity "encryption" for hierarchy "final_humming:humming_inst|encryption:inst_enc" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/final_humming.v Line: 54
-Info (12128): Elaborating entity "encryption_function" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption.v Line: 24
-Info (12128): Elaborating entity "S1_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S1_box_enc:s11" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v Line: 18
-Info (12128): Elaborating entity "S2_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S2_box_enc:s12" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v Line: 19
-Info (12128): Elaborating entity "S3_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S3_box_enc:s13" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v Line: 20
-Info (12128): Elaborating entity "S4_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S4_box_enc:s14" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v Line: 21
-Info (12128): Elaborating entity "linear_transform_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|linear_transform_enc:lt1" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/encryption_function.v Line: 23
-Info (12128): Elaborating entity "decryption" for hierarchy "final_humming:humming_inst|decryption:inst_dec" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/final_humming.v Line: 66
-Info (12128): Elaborating entity "decryption_function" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption.v Line: 23
-Info (12128): Elaborating entity "S1_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S1_box_dec:s51" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v Line: 18
-Info (12128): Elaborating entity "S2_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S2_box_dec:s52" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v Line: 19
-Info (12128): Elaborating entity "S3_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S3_box_dec:s53" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v Line: 20
-Info (12128): Elaborating entity "S4_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S4_box_dec:s54" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v Line: 21
-Info (12128): Elaborating entity "linear_transform_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|linear_transform_dec:lt1" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/decryption_function.v Line: 25
-Info (12128): Elaborating entity "initial_process" for hierarchy "final_humming:humming_inst|initial_process:inst_init" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/final_humming.v Line: 93
-Warning (10230): Verilog HDL assignment warning at initial_process.v(53): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 53
-Warning (10230): Verilog HDL assignment warning at initial_process.v(60): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 60
-Warning (10230): Verilog HDL assignment warning at initial_process.v(67): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 67
-Warning (10230): Verilog HDL assignment warning at initial_process.v(74): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 74
-Warning (10230): Verilog HDL assignment warning at initial_process.v(81): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 81
-Warning (10230): Verilog HDL assignment warning at initial_process.v(115): truncated value with size 4 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/initial_process.v Line: 115
-Info (12128): Elaborating entity "hex_display" for hierarchy "hex_display:hx1" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 120
+Warning (10034): Output port "HEX4" at DE1_SOC_golden_top.v(59) has no driver File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+Warning (10034): Output port "HEX5" at DE1_SOC_golden_top.v(60) has no driver File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+Warning (10034): Output port "LEDR[9..2]" at DE1_SOC_golden_top.v(70) has no driver File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+Info (12128): Elaborating entity "final_humming" for hierarchy "final_humming:humming_inst" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 118
+Info (12128): Elaborating entity "encryption" for hierarchy "final_humming:humming_inst|encryption:inst_enc" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/final_humming.v Line: 55
+Info (12128): Elaborating entity "encryption_function" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption.v Line: 28
+Info (12128): Elaborating entity "S1_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S1_box_enc:s11" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v Line: 23
+Info (12128): Elaborating entity "S2_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S2_box_enc:s12" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v Line: 24
+Info (12128): Elaborating entity "S3_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S3_box_enc:s13" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v Line: 25
+Info (12128): Elaborating entity "S4_box_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|S4_box_enc:s14" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v Line: 26
+Info (12128): Elaborating entity "linear_transform_enc" for hierarchy "final_humming:humming_inst|encryption:inst_enc|encryption_function:inst1|linear_transform_enc:lt1" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/encryption_function.v Line: 29
+Info (12128): Elaborating entity "decryption" for hierarchy "final_humming:humming_inst|decryption:inst_dec" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/final_humming.v Line: 68
+Info (12128): Elaborating entity "decryption_function" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption.v Line: 27
+Info (12128): Elaborating entity "S1_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S1_box_dec:s51" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v Line: 23
+Info (12128): Elaborating entity "S2_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S2_box_dec:s52" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v Line: 24
+Info (12128): Elaborating entity "S3_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S3_box_dec:s53" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v Line: 25
+Info (12128): Elaborating entity "S4_box_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|S4_box_dec:s54" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v Line: 26
+Info (12128): Elaborating entity "linear_transform_dec" for hierarchy "final_humming:humming_inst|decryption:inst_dec|decryption_function:inst4|linear_transform_dec:lt1" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/decryption_function.v Line: 32
+Info (12128): Elaborating entity "initial_process" for hierarchy "final_humming:humming_inst|initial_process:inst_init" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/final_humming.v Line: 96
+Warning (10230): Verilog HDL assignment warning at initial_process.v(53): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 53
+Warning (10230): Verilog HDL assignment warning at initial_process.v(60): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 60
+Warning (10230): Verilog HDL assignment warning at initial_process.v(67): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 67
+Warning (10230): Verilog HDL assignment warning at initial_process.v(74): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 74
+Warning (10230): Verilog HDL assignment warning at initial_process.v(81): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 81
+Warning (10230): Verilog HDL assignment warning at initial_process.v(115): truncated value with size 4 to match size of target (3) File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/initial_process.v Line: 115
+Info (12128): Elaborating entity "hex_display" for hierarchy "hex_display:hx1" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 120
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 59
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 60
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 59
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 60
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 70
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/Hummingbird.map.smsg
+Info (144001): Generated suppressed messages file D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/Hummingbird.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 65
-    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 65
-    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 65
-    Warning (15610): No output dependent on input pin "SW[3]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
-    Warning (15610): No output dependent on input pin "SW[4]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
-    Warning (15610): No output dependent on input pin "SW[5]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
-    Warning (15610): No output dependent on input pin "SW[6]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
-    Warning (15610): No output dependent on input pin "SW[7]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
-    Warning (15610): No output dependent on input pin "SW[8]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
-    Warning (15610): No output dependent on input pin "SW[9]" File: D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "KEY[1]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 65
+    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 65
+    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 65
+    Warning (15610): No output dependent on input pin "SW[3]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "SW[4]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "SW[5]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "SW[6]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "SW[7]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "SW[8]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
+    Warning (15610): No output dependent on input pin "SW[9]" File: D:/intelFPGA_lite/18.1/Projects/Hummingbird/DE1_SOC_golden_top.v Line: 77
 Info (21057): Implemented 1601 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 1534 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
-    Info: Peak virtual memory: 4855 megabytes
-    Info: Processing ended: Sat May 30 19:19:57 2020
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:15
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Sat May 30 20:14:29 2020
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:01:26
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/output_files/Hummingbird.map.smsg.
+The suppressed messages can be found in D:/intelFPGA_lite/18.1/Projects/Hummingbird/output_files/Hummingbird.map.smsg.
 
 

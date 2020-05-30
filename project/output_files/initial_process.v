@@ -43,7 +43,7 @@ begin
 end
 else
 	case(cnt)
-	'b0:	begin
+	'b0:	begin // Первая стадия инициализации, инициализация регистров состояния
 				enc_complete <= 0;
 				dec_complete <= 0;
 				encRS1 <= nonce0;
@@ -52,28 +52,28 @@ else
 				encRS4 <= nonce3;
 				cnt <= cnt + 1;
 			end
-	'b1:	begin
+	'b1:	begin // Вторая стадия инициализации с обновлением значений регистров состояния
 				encRS1 <= encRS1 + enc_data_out;
 				encRS2 <= enc1_out + encRS2;
 				encRS3 <= enc2_out + encRS3;
 				encRS4 <= enc3_out + encRS4;
 				cnt <= cnt + 1;
 			end
-	'b10:	begin
+	'b10:	begin // Третья стадия инициализации с обновлением значений регистров состояния
 				encRS1 <= encRS1 + enc_data_out;
 				encRS2 <= enc1_out + encRS2;
 				encRS3 <= enc2_out + encRS3;
 				encRS4 <= enc3_out + encRS4;
 				cnt <= cnt + 1;
 			end
-	'b11:	begin
+	'b11:	begin // Четвертая стадия инициализации с обновлением значений регистров состояния
 				encRS1 <= encRS1 + enc_data_out;
 				encRS2 <= enc1_out + encRS2;
 				encRS3 <= enc2_out + encRS3;
 				encRS4 <= enc3_out + encRS4;
 				cnt <= cnt + 1;
 			end
-	'b100:begin
+	'b100:begin // Последняя стадия инициализации с обновлением значений регистров состояния
 				encRS1 <= encRS1 + enc_data_out;
 				encRS2 <= enc1_out + encRS2;
 				encRS3 <= enc2_out + encRS3;
@@ -81,7 +81,7 @@ else
 				cnt <= cnt + 1;
 				rs_rdy	<= 1;
 			end
-	'b101:begin
+	'b101:begin // Ожидание data_rdy для начала шифрования
 				cnt <= cnt + data_rdy;
 				LFSR <= enc_data_out | 16'h1000;
 				decRS1 <= encRS1;
@@ -91,7 +91,7 @@ else
 				enc_complete <= data_rdy;
 				dec_complete <= data_rdy;
 			end
-	'b110:begin
+	'b110:begin // Шифрование данных до момента прихода data_rdy = 0
 				if(data_rdy)
 				begin
 				encRS1 <= encRS1 + enc3_out;
@@ -107,7 +107,7 @@ else
 				enc_complete <= data_rdy;
 				dec_complete <= data_rdy;
 			end
-	'b111:begin
+	'b111:begin // Остановка шифрование и ожидание продолжения
 				cnt <= cnt - data_rdy;
 				enc_complete <= data_rdy;
 				dec_complete <= data_rdy;
