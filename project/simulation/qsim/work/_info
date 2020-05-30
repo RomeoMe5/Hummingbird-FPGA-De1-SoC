@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/18.1/Projects/VKR_Hummingbird_tr1/simulation/qsim
+vfinal_humming
+Z1 !s110 1590854574
+!i10b 1
+!s100 zl[QgQ3=O;V^0_he:N3gf0
+Ia;1A8XgCYAQLfMnzP_a<d0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1590854566
+8Hummingbird.vo
+FHummingbird.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1590854571.000000
+!s107 Hummingbird.vo|
+!s90 -work|work|Hummingbird.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vfinal_humming_vlg_vec_tst
+R1
+!i10b 1
+!s100 W6lcK56NShC1QN65z_eMk3
+I4AC5fV1Nie:NIWYz>@N]k2
+R2
+R0
+w1590854558
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1590854574.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R4
+R5

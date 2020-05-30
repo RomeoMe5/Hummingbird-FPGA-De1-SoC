@@ -1,0 +1,1847 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/26/2020 18:46:10"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          final_humming
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module final_humming_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [15:0] NONCE0;
+reg [15:0] NONCE1;
+reg [15:0] NONCE2;
+reg [15:0] NONCE3;
+reg clk;
+reg data_rdy;
+reg [15:0] input_data;
+reg [256:0] key;
+reg reset;
+// wires                                               
+wire dec_complete;
+wire [15:0] dec_data_final;
+wire enc_complete;
+wire [15:0] enc_data_final;
+
+// assign statements (if any)                          
+final_humming i1 (
+// port map - connection between master ports and signals/registers   
+	.NONCE0(NONCE0),
+	.NONCE1(NONCE1),
+	.NONCE2(NONCE2),
+	.NONCE3(NONCE3),
+	.clk(clk),
+	.data_rdy(data_rdy),
+	.dec_complete(dec_complete),
+	.dec_data_final(dec_data_final),
+	.enc_complete(enc_complete),
+	.enc_data_final(enc_data_final),
+	.input_data(input_data),
+	.key(key),
+	.reset(reset)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+initial
+begin
+	repeat(33)
+	begin
+		clk = 1'b0;
+		clk = #15000 1'b1;
+		# 15000;
+	end
+	clk = 1'b0;
+end 
+// key[ 256 ]
+initial
+begin
+	key[256] = 1'b0;
+end 
+// key[ 255 ]
+initial
+begin
+	key[255] = 1'b0;
+end 
+// key[ 254 ]
+initial
+begin
+	key[254] = 1'b1;
+end 
+// key[ 253 ]
+initial
+begin
+	key[253] = 1'b0;
+end 
+// key[ 252 ]
+initial
+begin
+	key[252] = 1'b1;
+end 
+// key[ 251 ]
+initial
+begin
+	key[251] = 1'b0;
+end 
+// key[ 250 ]
+initial
+begin
+	key[250] = 1'b0;
+end 
+// key[ 249 ]
+initial
+begin
+	key[249] = 1'b0;
+end 
+// key[ 248 ]
+initial
+begin
+	key[248] = 1'b0;
+end 
+// key[ 247 ]
+initial
+begin
+	key[247] = 1'b1;
+end 
+// key[ 246 ]
+initial
+begin
+	key[246] = 1'b0;
+end 
+// key[ 245 ]
+initial
+begin
+	key[245] = 1'b1;
+end 
+// key[ 244 ]
+initial
+begin
+	key[244] = 1'b1;
+end 
+// key[ 243 ]
+initial
+begin
+	key[243] = 1'b1;
+end 
+// key[ 242 ]
+initial
+begin
+	key[242] = 1'b0;
+end 
+// key[ 241 ]
+initial
+begin
+	key[241] = 1'b1;
+end 
+// key[ 240 ]
+initial
+begin
+	key[240] = 1'b0;
+end 
+// key[ 239 ]
+initial
+begin
+	key[239] = 1'b0;
+end 
+// key[ 238 ]
+initial
+begin
+	key[238] = 1'b1;
+end 
+// key[ 237 ]
+initial
+begin
+	key[237] = 1'b0;
+end 
+// key[ 236 ]
+initial
+begin
+	key[236] = 1'b1;
+end 
+// key[ 235 ]
+initial
+begin
+	key[235] = 1'b0;
+end 
+// key[ 234 ]
+initial
+begin
+	key[234] = 1'b0;
+end 
+// key[ 233 ]
+initial
+begin
+	key[233] = 1'b1;
+end 
+// key[ 232 ]
+initial
+begin
+	key[232] = 1'b1;
+end 
+// key[ 231 ]
+initial
+begin
+	key[231] = 1'b1;
+end 
+// key[ 230 ]
+initial
+begin
+	key[230] = 1'b0;
+end 
+// key[ 229 ]
+initial
+begin
+	key[229] = 1'b0;
+end 
+// key[ 228 ]
+initial
+begin
+	key[228] = 1'b0;
+end 
+// key[ 227 ]
+initial
+begin
+	key[227] = 1'b1;
+end 
+// key[ 226 ]
+initial
+begin
+	key[226] = 1'b1;
+end 
+// key[ 225 ]
+initial
+begin
+	key[225] = 1'b1;
+end 
+// key[ 224 ]
+initial
+begin
+	key[224] = 1'b1;
+end 
+// key[ 223 ]
+initial
+begin
+	key[223] = 1'b0;
+end 
+// key[ 222 ]
+initial
+begin
+	key[222] = 1'b0;
+end 
+// key[ 221 ]
+initial
+begin
+	key[221] = 1'b0;
+end 
+// key[ 220 ]
+initial
+begin
+	key[220] = 1'b1;
+end 
+// key[ 219 ]
+initial
+begin
+	key[219] = 1'b0;
+end 
+// key[ 218 ]
+initial
+begin
+	key[218] = 1'b0;
+end 
+// key[ 217 ]
+initial
+begin
+	key[217] = 1'b1;
+end 
+// key[ 216 ]
+initial
+begin
+	key[216] = 1'b0;
+end 
+// key[ 215 ]
+initial
+begin
+	key[215] = 1'b1;
+end 
+// key[ 214 ]
+initial
+begin
+	key[214] = 1'b1;
+end 
+// key[ 213 ]
+initial
+begin
+	key[213] = 1'b1;
+end 
+// key[ 212 ]
+initial
+begin
+	key[212] = 1'b0;
+end 
+// key[ 211 ]
+initial
+begin
+	key[211] = 1'b0;
+end 
+// key[ 210 ]
+initial
+begin
+	key[210] = 1'b0;
+end 
+// key[ 209 ]
+initial
+begin
+	key[209] = 1'b0;
+end 
+// key[ 208 ]
+initial
+begin
+	key[208] = 1'b0;
+end 
+// key[ 207 ]
+initial
+begin
+	key[207] = 1'b0;
+end 
+// key[ 206 ]
+initial
+begin
+	key[206] = 1'b1;
+end 
+// key[ 205 ]
+initial
+begin
+	key[205] = 1'b1;
+end 
+// key[ 204 ]
+initial
+begin
+	key[204] = 1'b0;
+end 
+// key[ 203 ]
+initial
+begin
+	key[203] = 1'b0;
+end 
+// key[ 202 ]
+initial
+begin
+	key[202] = 1'b0;
+end 
+// key[ 201 ]
+initial
+begin
+	key[201] = 1'b0;
+end 
+// key[ 200 ]
+initial
+begin
+	key[200] = 1'b0;
+end 
+// key[ 199 ]
+initial
+begin
+	key[199] = 1'b1;
+end 
+// key[ 198 ]
+initial
+begin
+	key[198] = 1'b0;
+end 
+// key[ 197 ]
+initial
+begin
+	key[197] = 1'b1;
+end 
+// key[ 196 ]
+initial
+begin
+	key[196] = 1'b1;
+end 
+// key[ 195 ]
+initial
+begin
+	key[195] = 1'b0;
+end 
+// key[ 194 ]
+initial
+begin
+	key[194] = 1'b0;
+end 
+// key[ 193 ]
+initial
+begin
+	key[193] = 1'b0;
+end 
+// key[ 192 ]
+initial
+begin
+	key[192] = 1'b0;
+end 
+// key[ 191 ]
+initial
+begin
+	key[191] = 1'b0;
+end 
+// key[ 190 ]
+initial
+begin
+	key[190] = 1'b0;
+end 
+// key[ 189 ]
+initial
+begin
+	key[189] = 1'b0;
+end 
+// key[ 188 ]
+initial
+begin
+	key[188] = 1'b1;
+end 
+// key[ 187 ]
+initial
+begin
+	key[187] = 1'b1;
+end 
+// key[ 186 ]
+initial
+begin
+	key[186] = 1'b0;
+end 
+// key[ 185 ]
+initial
+begin
+	key[185] = 1'b0;
+end 
+// key[ 184 ]
+initial
+begin
+	key[184] = 1'b1;
+end 
+// key[ 183 ]
+initial
+begin
+	key[183] = 1'b1;
+end 
+// key[ 182 ]
+initial
+begin
+	key[182] = 1'b1;
+end 
+// key[ 181 ]
+initial
+begin
+	key[181] = 1'b1;
+end 
+// key[ 180 ]
+initial
+begin
+	key[180] = 1'b0;
+end 
+// key[ 179 ]
+initial
+begin
+	key[179] = 1'b0;
+end 
+// key[ 178 ]
+initial
+begin
+	key[178] = 1'b1;
+end 
+// key[ 177 ]
+initial
+begin
+	key[177] = 1'b0;
+end 
+// key[ 176 ]
+initial
+begin
+	key[176] = 1'b1;
+end 
+// key[ 175 ]
+initial
+begin
+	key[175] = 1'b0;
+end 
+// key[ 174 ]
+initial
+begin
+	key[174] = 1'b0;
+end 
+// key[ 173 ]
+initial
+begin
+	key[173] = 1'b0;
+end 
+// key[ 172 ]
+initial
+begin
+	key[172] = 1'b0;
+end 
+// key[ 171 ]
+initial
+begin
+	key[171] = 1'b1;
+end 
+// key[ 170 ]
+initial
+begin
+	key[170] = 1'b0;
+end 
+// key[ 169 ]
+initial
+begin
+	key[169] = 1'b0;
+end 
+// key[ 168 ]
+initial
+begin
+	key[168] = 1'b1;
+end 
+// key[ 167 ]
+initial
+begin
+	key[167] = 1'b0;
+end 
+// key[ 166 ]
+initial
+begin
+	key[166] = 1'b0;
+end 
+// key[ 165 ]
+initial
+begin
+	key[165] = 1'b0;
+end 
+// key[ 164 ]
+initial
+begin
+	key[164] = 1'b0;
+end 
+// key[ 163 ]
+initial
+begin
+	key[163] = 1'b0;
+end 
+// key[ 162 ]
+initial
+begin
+	key[162] = 1'b1;
+end 
+// key[ 161 ]
+initial
+begin
+	key[161] = 1'b1;
+end 
+// key[ 160 ]
+initial
+begin
+	key[160] = 1'b0;
+end 
+// key[ 159 ]
+initial
+begin
+	key[159] = 1'b0;
+end 
+// key[ 158 ]
+initial
+begin
+	key[158] = 1'b0;
+end 
+// key[ 157 ]
+initial
+begin
+	key[157] = 1'b1;
+end 
+// key[ 156 ]
+initial
+begin
+	key[156] = 1'b1;
+end 
+// key[ 155 ]
+initial
+begin
+	key[155] = 1'b1;
+end 
+// key[ 154 ]
+initial
+begin
+	key[154] = 1'b1;
+end 
+// key[ 153 ]
+initial
+begin
+	key[153] = 1'b1;
+end 
+// key[ 152 ]
+initial
+begin
+	key[152] = 1'b1;
+end 
+// key[ 151 ]
+initial
+begin
+	key[151] = 1'b0;
+end 
+// key[ 150 ]
+initial
+begin
+	key[150] = 1'b1;
+end 
+// key[ 149 ]
+initial
+begin
+	key[149] = 1'b0;
+end 
+// key[ 148 ]
+initial
+begin
+	key[148] = 1'b1;
+end 
+// key[ 147 ]
+initial
+begin
+	key[147] = 1'b1;
+end 
+// key[ 146 ]
+initial
+begin
+	key[146] = 1'b1;
+end 
+// key[ 145 ]
+initial
+begin
+	key[145] = 1'b1;
+end 
+// key[ 144 ]
+initial
+begin
+	key[144] = 1'b1;
+end 
+// key[ 143 ]
+initial
+begin
+	key[143] = 1'b0;
+end 
+// key[ 142 ]
+initial
+begin
+	key[142] = 1'b0;
+end 
+// key[ 141 ]
+initial
+begin
+	key[141] = 1'b1;
+end 
+// key[ 140 ]
+initial
+begin
+	key[140] = 1'b0;
+end 
+// key[ 139 ]
+initial
+begin
+	key[139] = 1'b0;
+end 
+// key[ 138 ]
+initial
+begin
+	key[138] = 1'b1;
+end 
+// key[ 137 ]
+initial
+begin
+	key[137] = 1'b1;
+end 
+// key[ 136 ]
+initial
+begin
+	key[136] = 1'b1;
+end 
+// key[ 135 ]
+initial
+begin
+	key[135] = 1'b0;
+end 
+// key[ 134 ]
+initial
+begin
+	key[134] = 1'b0;
+end 
+// key[ 133 ]
+initial
+begin
+	key[133] = 1'b0;
+end 
+// key[ 132 ]
+initial
+begin
+	key[132] = 1'b0;
+end 
+// key[ 131 ]
+initial
+begin
+	key[131] = 1'b0;
+end 
+// key[ 130 ]
+initial
+begin
+	key[130] = 1'b1;
+end 
+// key[ 129 ]
+initial
+begin
+	key[129] = 1'b1;
+end 
+// key[ 128 ]
+initial
+begin
+	key[128] = 1'b0;
+end 
+// key[ 127 ]
+initial
+begin
+	key[127] = 1'b1;
+end 
+// key[ 126 ]
+initial
+begin
+	key[126] = 1'b0;
+end 
+// key[ 125 ]
+initial
+begin
+	key[125] = 1'b0;
+end 
+// key[ 124 ]
+initial
+begin
+	key[124] = 1'b0;
+end 
+// key[ 123 ]
+initial
+begin
+	key[123] = 1'b1;
+end 
+// key[ 122 ]
+initial
+begin
+	key[122] = 1'b1;
+end 
+// key[ 121 ]
+initial
+begin
+	key[121] = 1'b0;
+end 
+// key[ 120 ]
+initial
+begin
+	key[120] = 1'b0;
+end 
+// key[ 119 ]
+initial
+begin
+	key[119] = 1'b0;
+end 
+// key[ 118 ]
+initial
+begin
+	key[118] = 1'b0;
+end 
+// key[ 117 ]
+initial
+begin
+	key[117] = 1'b1;
+end 
+// key[ 116 ]
+initial
+begin
+	key[116] = 1'b0;
+end 
+// key[ 115 ]
+initial
+begin
+	key[115] = 1'b1;
+end 
+// key[ 114 ]
+initial
+begin
+	key[114] = 1'b1;
+end 
+// key[ 113 ]
+initial
+begin
+	key[113] = 1'b1;
+end 
+// key[ 112 ]
+initial
+begin
+	key[112] = 1'b1;
+end 
+// key[ 111 ]
+initial
+begin
+	key[111] = 1'b0;
+end 
+// key[ 110 ]
+initial
+begin
+	key[110] = 1'b0;
+end 
+// key[ 109 ]
+initial
+begin
+	key[109] = 1'b1;
+end 
+// key[ 108 ]
+initial
+begin
+	key[108] = 1'b1;
+end 
+// key[ 107 ]
+initial
+begin
+	key[107] = 1'b1;
+end 
+// key[ 106 ]
+initial
+begin
+	key[106] = 1'b1;
+end 
+// key[ 105 ]
+initial
+begin
+	key[105] = 1'b1;
+end 
+// key[ 104 ]
+initial
+begin
+	key[104] = 1'b1;
+end 
+// key[ 103 ]
+initial
+begin
+	key[103] = 1'b0;
+end 
+// key[ 102 ]
+initial
+begin
+	key[102] = 1'b0;
+end 
+// key[ 101 ]
+initial
+begin
+	key[101] = 1'b0;
+end 
+// key[ 100 ]
+initial
+begin
+	key[100] = 1'b0;
+end 
+// key[ 99 ]
+initial
+begin
+	key[99] = 1'b0;
+end 
+// key[ 98 ]
+initial
+begin
+	key[98] = 1'b0;
+end 
+// key[ 97 ]
+initial
+begin
+	key[97] = 1'b1;
+end 
+// key[ 96 ]
+initial
+begin
+	key[96] = 1'b0;
+end 
+// key[ 95 ]
+initial
+begin
+	key[95] = 1'b1;
+end 
+// key[ 94 ]
+initial
+begin
+	key[94] = 1'b1;
+end 
+// key[ 93 ]
+initial
+begin
+	key[93] = 1'b0;
+end 
+// key[ 92 ]
+initial
+begin
+	key[92] = 1'b1;
+end 
+// key[ 91 ]
+initial
+begin
+	key[91] = 1'b0;
+end 
+// key[ 90 ]
+initial
+begin
+	key[90] = 1'b0;
+end 
+// key[ 89 ]
+initial
+begin
+	key[89] = 1'b0;
+end 
+// key[ 88 ]
+initial
+begin
+	key[88] = 1'b0;
+end 
+// key[ 87 ]
+initial
+begin
+	key[87] = 1'b1;
+end 
+// key[ 86 ]
+initial
+begin
+	key[86] = 1'b0;
+end 
+// key[ 85 ]
+initial
+begin
+	key[85] = 1'b0;
+end 
+// key[ 84 ]
+initial
+begin
+	key[84] = 1'b1;
+end 
+// key[ 83 ]
+initial
+begin
+	key[83] = 1'b0;
+end 
+// key[ 82 ]
+initial
+begin
+	key[82] = 1'b0;
+end 
+// key[ 81 ]
+initial
+begin
+	key[81] = 1'b1;
+end 
+// key[ 80 ]
+initial
+begin
+	key[80] = 1'b0;
+end 
+// key[ 79 ]
+initial
+begin
+	key[79] = 1'b1;
+end 
+// key[ 78 ]
+initial
+begin
+	key[78] = 1'b0;
+end 
+// key[ 77 ]
+initial
+begin
+	key[77] = 1'b1;
+end 
+// key[ 76 ]
+initial
+begin
+	key[76] = 1'b1;
+end 
+// key[ 75 ]
+initial
+begin
+	key[75] = 1'b1;
+end 
+// key[ 74 ]
+initial
+begin
+	key[74] = 1'b1;
+end 
+// key[ 73 ]
+initial
+begin
+	key[73] = 1'b1;
+end 
+// key[ 72 ]
+initial
+begin
+	key[72] = 1'b1;
+end 
+// key[ 71 ]
+initial
+begin
+	key[71] = 1'b0;
+end 
+// key[ 70 ]
+initial
+begin
+	key[70] = 1'b1;
+end 
+// key[ 69 ]
+initial
+begin
+	key[69] = 1'b0;
+end 
+// key[ 68 ]
+initial
+begin
+	key[68] = 1'b1;
+end 
+// key[ 67 ]
+initial
+begin
+	key[67] = 1'b0;
+end 
+// key[ 66 ]
+initial
+begin
+	key[66] = 1'b0;
+end 
+// key[ 65 ]
+initial
+begin
+	key[65] = 1'b1;
+end 
+// key[ 64 ]
+initial
+begin
+	key[64] = 1'b0;
+end 
+// key[ 63 ]
+initial
+begin
+	key[63] = 1'b0;
+end 
+// key[ 62 ]
+initial
+begin
+	key[62] = 1'b0;
+end 
+// key[ 61 ]
+initial
+begin
+	key[61] = 1'b1;
+end 
+// key[ 60 ]
+initial
+begin
+	key[60] = 1'b1;
+end 
+// key[ 59 ]
+initial
+begin
+	key[59] = 1'b0;
+end 
+// key[ 58 ]
+initial
+begin
+	key[58] = 1'b1;
+end 
+// key[ 57 ]
+initial
+begin
+	key[57] = 1'b0;
+end 
+// key[ 56 ]
+initial
+begin
+	key[56] = 1'b1;
+end 
+// key[ 55 ]
+initial
+begin
+	key[55] = 1'b1;
+end 
+// key[ 54 ]
+initial
+begin
+	key[54] = 1'b1;
+end 
+// key[ 53 ]
+initial
+begin
+	key[53] = 1'b1;
+end 
+// key[ 52 ]
+initial
+begin
+	key[52] = 1'b1;
+end 
+// key[ 51 ]
+initial
+begin
+	key[51] = 1'b1;
+end 
+// key[ 50 ]
+initial
+begin
+	key[50] = 1'b0;
+end 
+// key[ 49 ]
+initial
+begin
+	key[49] = 1'b1;
+end 
+// key[ 48 ]
+initial
+begin
+	key[48] = 1'b1;
+end 
+// key[ 47 ]
+initial
+begin
+	key[47] = 1'b1;
+end 
+// key[ 46 ]
+initial
+begin
+	key[46] = 1'b0;
+end 
+// key[ 45 ]
+initial
+begin
+	key[45] = 1'b0;
+end 
+// key[ 44 ]
+initial
+begin
+	key[44] = 1'b0;
+end 
+// key[ 43 ]
+initial
+begin
+	key[43] = 1'b0;
+end 
+// key[ 42 ]
+initial
+begin
+	key[42] = 1'b1;
+end 
+// key[ 41 ]
+initial
+begin
+	key[41] = 1'b1;
+end 
+// key[ 40 ]
+initial
+begin
+	key[40] = 1'b0;
+end 
+// key[ 39 ]
+initial
+begin
+	key[39] = 1'b1;
+end 
+// key[ 38 ]
+initial
+begin
+	key[38] = 1'b0;
+end 
+// key[ 37 ]
+initial
+begin
+	key[37] = 1'b1;
+end 
+// key[ 36 ]
+initial
+begin
+	key[36] = 1'b0;
+end 
+// key[ 35 ]
+initial
+begin
+	key[35] = 1'b1;
+end 
+// key[ 34 ]
+initial
+begin
+	key[34] = 1'b1;
+end 
+// key[ 33 ]
+initial
+begin
+	key[33] = 1'b1;
+end 
+// key[ 32 ]
+initial
+begin
+	key[32] = 1'b1;
+end 
+// key[ 31 ]
+initial
+begin
+	key[31] = 1'b1;
+end 
+// key[ 30 ]
+initial
+begin
+	key[30] = 1'b1;
+end 
+// key[ 29 ]
+initial
+begin
+	key[29] = 1'b1;
+end 
+// key[ 28 ]
+initial
+begin
+	key[28] = 1'b1;
+end 
+// key[ 27 ]
+initial
+begin
+	key[27] = 1'b0;
+end 
+// key[ 26 ]
+initial
+begin
+	key[26] = 1'b0;
+end 
+// key[ 25 ]
+initial
+begin
+	key[25] = 1'b0;
+end 
+// key[ 24 ]
+initial
+begin
+	key[24] = 1'b0;
+end 
+// key[ 23 ]
+initial
+begin
+	key[23] = 1'b1;
+end 
+// key[ 22 ]
+initial
+begin
+	key[22] = 1'b1;
+end 
+// key[ 21 ]
+initial
+begin
+	key[21] = 1'b1;
+end 
+// key[ 20 ]
+initial
+begin
+	key[20] = 1'b1;
+end 
+// key[ 19 ]
+initial
+begin
+	key[19] = 1'b0;
+end 
+// key[ 18 ]
+initial
+begin
+	key[18] = 1'b1;
+end 
+// key[ 17 ]
+initial
+begin
+	key[17] = 1'b0;
+end 
+// key[ 16 ]
+initial
+begin
+	key[16] = 1'b1;
+end 
+// key[ 15 ]
+initial
+begin
+	key[15] = 1'b0;
+end 
+// key[ 14 ]
+initial
+begin
+	key[14] = 1'b0;
+end 
+// key[ 13 ]
+initial
+begin
+	key[13] = 1'b1;
+end 
+// key[ 12 ]
+initial
+begin
+	key[12] = 1'b0;
+end 
+// key[ 11 ]
+initial
+begin
+	key[11] = 1'b1;
+end 
+// key[ 10 ]
+initial
+begin
+	key[10] = 1'b0;
+end 
+// key[ 9 ]
+initial
+begin
+	key[9] = 1'b0;
+end 
+// key[ 8 ]
+initial
+begin
+	key[8] = 1'b1;
+end 
+// key[ 7 ]
+initial
+begin
+	key[7] = 1'b0;
+end 
+// key[ 6 ]
+initial
+begin
+	key[6] = 1'b0;
+end 
+// key[ 5 ]
+initial
+begin
+	key[5] = 1'b0;
+end 
+// key[ 4 ]
+initial
+begin
+	key[4] = 1'b1;
+end 
+// key[ 3 ]
+initial
+begin
+	key[3] = 1'b1;
+end 
+// key[ 2 ]
+initial
+begin
+	key[2] = 1'b1;
+end 
+// key[ 1 ]
+initial
+begin
+	key[1] = 1'b0;
+end 
+// key[ 0 ]
+initial
+begin
+	key[0] = 1'b1;
+end 
+// NONCE0[ 15 ]
+initial
+begin
+	NONCE0[15] = 1'b1;
+end 
+// NONCE0[ 14 ]
+initial
+begin
+	NONCE0[14] = 1'b1;
+end 
+// NONCE0[ 13 ]
+initial
+begin
+	NONCE0[13] = 1'b1;
+end 
+// NONCE0[ 12 ]
+initial
+begin
+	NONCE0[12] = 1'b1;
+end 
+// NONCE0[ 11 ]
+initial
+begin
+	NONCE0[11] = 1'b0;
+end 
+// NONCE0[ 10 ]
+initial
+begin
+	NONCE0[10] = 1'b1;
+end 
+// NONCE0[ 9 ]
+initial
+begin
+	NONCE0[9] = 1'b0;
+end 
+// NONCE0[ 8 ]
+initial
+begin
+	NONCE0[8] = 1'b1;
+end 
+// NONCE0[ 7 ]
+initial
+begin
+	NONCE0[7] = 1'b0;
+end 
+// NONCE0[ 6 ]
+initial
+begin
+	NONCE0[6] = 1'b0;
+end 
+// NONCE0[ 5 ]
+initial
+begin
+	NONCE0[5] = 1'b1;
+end 
+// NONCE0[ 4 ]
+initial
+begin
+	NONCE0[4] = 1'b0;
+end 
+// NONCE0[ 3 ]
+initial
+begin
+	NONCE0[3] = 1'b1;
+end 
+// NONCE0[ 2 ]
+initial
+begin
+	NONCE0[2] = 1'b0;
+end 
+// NONCE0[ 1 ]
+initial
+begin
+	NONCE0[1] = 1'b1;
+end 
+// NONCE0[ 0 ]
+initial
+begin
+	NONCE0[0] = 1'b0;
+end 
+// NONCE1[ 15 ]
+initial
+begin
+	NONCE1[15] = 1'b0;
+end 
+// NONCE1[ 14 ]
+initial
+begin
+	NONCE1[14] = 1'b1;
+end 
+// NONCE1[ 13 ]
+initial
+begin
+	NONCE1[13] = 1'b0;
+end 
+// NONCE1[ 12 ]
+initial
+begin
+	NONCE1[12] = 1'b1;
+end 
+// NONCE1[ 11 ]
+initial
+begin
+	NONCE1[11] = 1'b0;
+end 
+// NONCE1[ 10 ]
+initial
+begin
+	NONCE1[10] = 1'b1;
+end 
+// NONCE1[ 9 ]
+initial
+begin
+	NONCE1[9] = 1'b1;
+end 
+// NONCE1[ 8 ]
+initial
+begin
+	NONCE1[8] = 1'b1;
+end 
+// NONCE1[ 7 ]
+initial
+begin
+	NONCE1[7] = 1'b1;
+end 
+// NONCE1[ 6 ]
+initial
+begin
+	NONCE1[6] = 1'b0;
+end 
+// NONCE1[ 5 ]
+initial
+begin
+	NONCE1[5] = 1'b0;
+end 
+// NONCE1[ 4 ]
+initial
+begin
+	NONCE1[4] = 1'b0;
+end 
+// NONCE1[ 3 ]
+initial
+begin
+	NONCE1[3] = 1'b0;
+end 
+// NONCE1[ 2 ]
+initial
+begin
+	NONCE1[2] = 1'b0;
+end 
+// NONCE1[ 1 ]
+initial
+begin
+	NONCE1[1] = 1'b1;
+end 
+// NONCE1[ 0 ]
+initial
+begin
+	NONCE1[0] = 1'b0;
+end 
+// NONCE2[ 15 ]
+initial
+begin
+	NONCE2[15] = 1'b1;
+end 
+// NONCE2[ 14 ]
+initial
+begin
+	NONCE2[14] = 1'b0;
+end 
+// NONCE2[ 13 ]
+initial
+begin
+	NONCE2[13] = 1'b1;
+end 
+// NONCE2[ 12 ]
+initial
+begin
+	NONCE2[12] = 1'b1;
+end 
+// NONCE2[ 11 ]
+initial
+begin
+	NONCE2[11] = 1'b0;
+end 
+// NONCE2[ 10 ]
+initial
+begin
+	NONCE2[10] = 1'b1;
+end 
+// NONCE2[ 9 ]
+initial
+begin
+	NONCE2[9] = 1'b0;
+end 
+// NONCE2[ 8 ]
+initial
+begin
+	NONCE2[8] = 1'b1;
+end 
+// NONCE2[ 7 ]
+initial
+begin
+	NONCE2[7] = 1'b0;
+end 
+// NONCE2[ 6 ]
+initial
+begin
+	NONCE2[6] = 1'b0;
+end 
+// NONCE2[ 5 ]
+initial
+begin
+	NONCE2[5] = 1'b0;
+end 
+// NONCE2[ 4 ]
+initial
+begin
+	NONCE2[4] = 1'b0;
+end 
+// NONCE2[ 3 ]
+initial
+begin
+	NONCE2[3] = 1'b1;
+end 
+// NONCE2[ 2 ]
+initial
+begin
+	NONCE2[2] = 1'b1;
+end 
+// NONCE2[ 1 ]
+initial
+begin
+	NONCE2[1] = 1'b0;
+end 
+// NONCE2[ 0 ]
+initial
+begin
+	NONCE2[0] = 1'b0;
+end 
+// NONCE3[ 15 ]
+initial
+begin
+	NONCE3[15] = 1'b1;
+end 
+// NONCE3[ 14 ]
+initial
+begin
+	NONCE3[14] = 1'b1;
+end 
+// NONCE3[ 13 ]
+initial
+begin
+	NONCE3[13] = 1'b0;
+end 
+// NONCE3[ 12 ]
+initial
+begin
+	NONCE3[12] = 1'b0;
+end 
+// NONCE3[ 11 ]
+initial
+begin
+	NONCE3[11] = 1'b0;
+end 
+// NONCE3[ 10 ]
+initial
+begin
+	NONCE3[10] = 1'b1;
+end 
+// NONCE3[ 9 ]
+initial
+begin
+	NONCE3[9] = 1'b1;
+end 
+// NONCE3[ 8 ]
+initial
+begin
+	NONCE3[8] = 1'b0;
+end 
+// NONCE3[ 7 ]
+initial
+begin
+	NONCE3[7] = 1'b1;
+end 
+// NONCE3[ 6 ]
+initial
+begin
+	NONCE3[6] = 1'b1;
+end 
+// NONCE3[ 5 ]
+initial
+begin
+	NONCE3[5] = 1'b0;
+end 
+// NONCE3[ 4 ]
+initial
+begin
+	NONCE3[4] = 1'b0;
+end 
+// NONCE3[ 3 ]
+initial
+begin
+	NONCE3[3] = 1'b0;
+end 
+// NONCE3[ 2 ]
+initial
+begin
+	NONCE3[2] = 1'b0;
+end 
+// NONCE3[ 1 ]
+initial
+begin
+	NONCE3[1] = 1'b1;
+end 
+// NONCE3[ 0 ]
+initial
+begin
+	NONCE3[0] = 1'b1;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+	reset = #10000 1'b0;
+	reset = #20000 1'b1;
+end 
+
+// data_rdy
+initial
+begin
+	data_rdy = 1'b0;
+	data_rdy = #190000 1'b1;
+	data_rdy = #110000 1'b0;
+end 
+// input_data[ 15 ]
+initial
+begin
+	input_data[15] = 1'b0;
+	input_data[15] = #180000 1'b1;
+	input_data[15] = #30000 1'b0;
+	input_data[15] = #30000 1'b1;
+	input_data[15] = #60000 1'b0;
+end 
+// input_data[ 14 ]
+initial
+begin
+	input_data[14] = 1'b0;
+	input_data[14] = #180000 1'b1;
+	input_data[14] = #30000 1'b0;
+	input_data[14] = #30000 1'b1;
+	input_data[14] = #60000 1'b0;
+end 
+// input_data[ 13 ]
+initial
+begin
+	input_data[13] = 1'b0;
+	input_data[13] = #180000 1'b1;
+	input_data[13] = #30000 1'b0;
+	input_data[13] = #30000 1'b1;
+	input_data[13] = #60000 1'b0;
+end 
+// input_data[ 12 ]
+initial
+begin
+	input_data[12] = 1'b0;
+	input_data[12] = #180000 1'b1;
+	input_data[12] = #30000 1'b0;
+	input_data[12] = #30000 1'b1;
+	input_data[12] = #60000 1'b0;
+end 
+// input_data[ 11 ]
+initial
+begin
+	input_data[11] = 1'b0;
+	input_data[11] = #180000 1'b1;
+	input_data[11] = #30000 1'b0;
+	input_data[11] = #30000 1'b1;
+	input_data[11] = #30000 1'b0;
+end 
+// input_data[ 10 ]
+initial
+begin
+	input_data[10] = 1'b0;
+	input_data[10] = #180000 1'b1;
+	input_data[10] = #30000 1'b0;
+	input_data[10] = #30000 1'b1;
+	input_data[10] = #30000 1'b0;
+end 
+// input_data[ 9 ]
+initial
+begin
+	input_data[9] = 1'b0;
+	input_data[9] = #180000 1'b1;
+	input_data[9] = #30000 1'b0;
+	input_data[9] = #30000 1'b1;
+	input_data[9] = #30000 1'b0;
+end 
+// input_data[ 8 ]
+initial
+begin
+	input_data[8] = 1'b0;
+	input_data[8] = #180000 1'b1;
+	input_data[8] = #30000 1'b0;
+	input_data[8] = #30000 1'b1;
+	input_data[8] = #30000 1'b0;
+end 
+// input_data[ 7 ]
+initial
+begin
+	input_data[7] = 1'b0;
+	input_data[7] = #180000 1'b1;
+	input_data[7] = #30000 1'b0;
+	input_data[7] = #30000 1'b1;
+	input_data[7] = #60000 1'b0;
+end 
+// input_data[ 6 ]
+initial
+begin
+	input_data[6] = 1'b0;
+	input_data[6] = #180000 1'b1;
+	input_data[6] = #30000 1'b0;
+	input_data[6] = #30000 1'b1;
+	input_data[6] = #60000 1'b0;
+end 
+// input_data[ 5 ]
+initial
+begin
+	input_data[5] = 1'b0;
+	input_data[5] = #180000 1'b1;
+	input_data[5] = #30000 1'b0;
+	input_data[5] = #30000 1'b1;
+	input_data[5] = #60000 1'b0;
+end 
+// input_data[ 4 ]
+initial
+begin
+	input_data[4] = 1'b0;
+	input_data[4] = #180000 1'b1;
+	input_data[4] = #30000 1'b0;
+	input_data[4] = #30000 1'b1;
+	input_data[4] = #60000 1'b0;
+end 
+// input_data[ 3 ]
+initial
+begin
+	input_data[3] = 1'b0;
+	input_data[3] = #180000 1'b1;
+	input_data[3] = #30000 1'b0;
+	input_data[3] = #30000 1'b1;
+	input_data[3] = #60000 1'b0;
+end 
+// input_data[ 2 ]
+initial
+begin
+	input_data[2] = 1'b0;
+	input_data[2] = #180000 1'b1;
+	input_data[2] = #30000 1'b0;
+	input_data[2] = #30000 1'b1;
+	input_data[2] = #30000 1'b0;
+end 
+// input_data[ 1 ]
+initial
+begin
+	input_data[1] = 1'b0;
+	input_data[1] = #180000 1'b1;
+	input_data[1] = #30000 1'b0;
+	input_data[1] = #30000 1'b1;
+	input_data[1] = #60000 1'b0;
+end 
+// input_data[ 0 ]
+initial
+begin
+	input_data[0] = 1'b0;
+	input_data[0] = #180000 1'b1;
+	input_data[0] = #30000 1'b0;
+	input_data[0] = #30000 1'b1;
+	input_data[0] = #30000 1'b0;
+end 
+endmodule
+
