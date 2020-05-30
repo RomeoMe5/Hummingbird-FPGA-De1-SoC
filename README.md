@@ -4,8 +4,6 @@
 
   Проект реализован для платы De1-SoC и разработан в среде Quartus Prime Lite Edition 18.1. Больше информации по плате можно найти на сайте производителя [здесь](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4).
 
-  В данной ветке представлен проект для Quartus. Для его запуска и тестирования скачайте проект. Файл проекта называется Hummingbird.qpf.
-
   Схематическое представление алгоритма шифрования Hummingbird.
 ![Hummingbird diagram](source/Hummingbird_bloc-diagram.png) 
 
@@ -25,6 +23,9 @@
 ![update_rs](source/update_rs.png) 
 
 - **final_humming** - верхний файл проекта, связывающий все модули системы в единое целое. В данном модуле указаны связи между модулями и шины данных для взаимодействия с устройством из вне;
+
+## Запуск и моделирование
+  В данной ветке представлен проект для Quartus. Для его запуска и тестирования скачайте проект. В папке \project находится файл проекта Hummingbird.qpf. Его необходимо запустить с помощью среды разработки Quartus II. Для прототипирования на плате устаовите файл верхнего уровня DE1_SOC_golden_top и проведите компиляцию. Для симуляции лучше выбрать файлом верхнего уровня final_humming и провести Analysis&Elaboration, после чего с помощью файла Waveform1.vwf провести тестирование.
 
 ## Используемое ПО
 - [Quartus Prime Lite Edition 18.1](https://fpgasoftware.intel.com/18.1/?edition=lite&platform=windows) с дополнительным пакетом ModelSim-Intel FPGA Edition и поддержкой необходимого устройства (в нашем случае Cyclone V device support).
