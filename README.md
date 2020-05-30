@@ -31,5 +31,5 @@
 - [Quartus Prime Lite Edition 18.1](https://fpgasoftware.intel.com/18.1/?edition=lite&platform=windows) с дополнительным пакетом ModelSim-Intel FPGA Edition и поддержкой необходимого устройства (в нашем случае Cyclone V device support).
 
 ## Документация
-- Для знакомство со структурой и принципа шифрования алгоритма статья [тут](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=836&PartNo=4)
-- Текст ВКР с подробным описанием работы [тут](source/ДвойнишниковНЕ_ВКР.pdf)
+- Для знакомство со структурой и принципа шифрования алгоритма статья [здесь](https://uwaterloo.ca/communications-security-lab/publications/ultra-lightweight-cryptography-low-cost-rfid-tags)
+- Текст ВКР с подробным описанием работы [здесь](source/ДвойнишниковНЕ_ВКР.pdf)
